@@ -1,8 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/"
+    "/content/mysite-sarmad/:/",
+    "/content/eds-sarmad-aem/configuration:/.helix/config.json",
+    "/content/eds-sarmad-aem/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/mysite-sarmad/"
   ]
 }
