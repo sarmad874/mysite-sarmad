@@ -29,7 +29,12 @@
   justify-content: center;
   position: relative;
   width: 100%;
+
+  /* FIX: ensures slide has visible area */
   min-height: min(50vw, calc(100dvh - var(--header-height)));
+
+  /* FIX: prevents overflow issues with absolute image */
+  overflow: hidden;
 }
 
 .carousel .carousel-slide:has(.carousel-slide-content[data-align='center']) {
@@ -40,15 +45,24 @@
   align-items: flex-end;
 }
 
+/* ✅ FIX: Add positioning context for absolute picture */
+.carousel .carousel-slide .carousel-slide-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .carousel .carousel-slide .carousel-slide-image picture {
   position: absolute;
   inset: 0;
 }
 
+/* ✅ Ensure image fills properly */
 .carousel .carousel-slide .carousel-slide-image picture > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .carousel .carousel-slide .carousel-slide-content {
