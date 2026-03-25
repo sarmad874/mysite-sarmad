@@ -164,36 +164,49 @@
     "id": "carousel",
     "fields": [
       {
-        "component": "list",
-        "name": "slides",
-        "label": "Slides",
-        "multi": true,
-        "item": {
-          "component": "object",
-          "fields": [
-            {
-              "component": "reference",
-              "name": "image",
-              "label": "Image",
-              "valueType": "string",
-              "multi": false
-            },
-            {
-              "component": "text",
-              "name": "imageAlt",
-              "label": "Alt",
-              "value": "",
-              "valueType": "string"
-            },
-            {
-              "component": "text",
-              "name": "title",
-              "label": "Title",
-              "value": "",
-              "valueType": "string"
-            }
-          ]
-        }
+        "component": "container",
+        "name": "slide1",
+        "label": "Slide 1",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "reference",
+            "name": "slide1Image",
+            "label": "Image",
+            "valueType": "string",
+            "multi": false
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "name": "slide2",
+        "label": "Slide 2",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "reference",
+            "name": "slide2Image",
+            "label": "Image",
+            "valueType": "string",
+            "multi": false
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "name": "slide3",
+        "label": "Slide 3",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "reference",
+            "name": "slide3Image",
+            "label": "Image",
+            "valueType": "string",
+            "multi": false
+          }
+        ]
       }
     ]
   },
