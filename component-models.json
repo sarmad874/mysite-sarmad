@@ -173,13 +173,6 @@
             "component": "reference",
             "name": "slide1Image",
             "label": "Image"
-          },
-          {
-            "component": "reference",
-            "valueType": "string",
-            "name": "image",
-            "label": "Image",
-            "multi": false
           }
         ]
       },
