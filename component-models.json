@@ -161,6 +161,86 @@
     ]
   },
   {
+    "id": "carousel",
+    "fields": [
+      {
+        "component": "container",
+        "name": "slides",
+        "label": "Slides",
+        "multi": true,
+        "fields": [
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "image",
+            "label": "Image",
+            "multi": false
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "imageAlt",
+            "label": "Image Alt",
+            "value": ""
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "heading",
+            "label": "Heading",
+            "value": ""
+          },
+          {
+            "component": "richtext",
+            "valueType": "string",
+            "name": "description",
+            "label": "Description",
+            "value": ""
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "ctaText",
+            "label": "CTA Text",
+            "value": ""
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "ctaLink",
+            "label": "CTA Link",
+            "value": ""
+          },
+          {
+            "component": "select",
+            "valueType": "string",
+            "name": "alignment",
+            "label": "Content Alignment",
+            "options": [
+              {
+                "name": "Left",
+                "value": "left"
+              },
+              {
+                "name": "Center",
+                "value": "center"
+              },
+              {
+                "name": "Right",
+                "value": "right"
+              },
+              {
+                "name": "Justify",
+                "value": "justify"
+              }
+            ],
+            "value": "left"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
