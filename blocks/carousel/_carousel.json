@@ -27,7 +27,7 @@
           "collapsible": true,
           "fields": [
             {
-              "component": "image",
+              "component": "reference",
               "name": "slide1Image",
               "label": "Image"
             }
@@ -40,7 +40,7 @@
           "collapsible": true,
           "fields": [
             {
-              "component": "image",
+              "component": "reference",
               "name": "slide2Image",
               "label": "Image"
             }
@@ -53,13 +53,13 @@
           "collapsible": true,
           "fields": [
             {
-              "component": "image",
+              "component": "reference",
               "name": "slide3Image",
               "label": "Image"
             }
           ]
         }
-        
+
       ]
     }
   ],
