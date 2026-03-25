@@ -73,21 +73,47 @@ function bindEvents(block) {
   });
 }
 
+// function createSlide(row, slideIndex, carouselId) {
+//   const slide = document.createElement('li');
+//   slide.dataset.slideIndex = slideIndex;
+//   slide.setAttribute('id', `carousel-${carouselId}-slide-${slideIndex}`);
+//   slide.classList.add('carousel-slide');
+
+//   row.querySelectorAll(':scope > div').forEach((column, colIdx) => {
+//     column.classList.add(`carousel-slide-${colIdx === 0 ? 'image' : 'content'}`);
+//     slide.append(column);
+//   });
+
+//   const labeledBy = slide.querySelector('h1, h2, h3, h4, h5, h6');
+//   if (labeledBy) {
+//     slide.setAttribute('aria-labelledby', labeledBy.getAttribute('id'));
+//   }
+
+//   return slide;
+// }
 function createSlide(row, slideIndex, carouselId) {
+  console.log('--- Creating Slide ---');
+  console.log('Slide Index:', slideIndex);
+  console.log('Row HTML:', row.innerHTML);
+
   const slide = document.createElement('li');
   slide.dataset.slideIndex = slideIndex;
   slide.setAttribute('id', `carousel-${carouselId}-slide-${slideIndex}`);
   slide.classList.add('carousel-slide');
 
-  row.querySelectorAll(':scope > div').forEach((column, colIdx) => {
+  const columns = row.querySelectorAll(':scope > div');
+  console.log('Columns found:', columns.length);
+
+  columns.forEach((column, colIdx) => {
+    console.log(`Column ${colIdx}:`, column);
+    console.log(`Column ${colIdx} HTML:`, column.innerHTML);
+
+    const img = column.querySelector('img');
+    console.log(`Column ${colIdx} IMG:`, img);
+
     column.classList.add(`carousel-slide-${colIdx === 0 ? 'image' : 'content'}`);
     slide.append(column);
   });
-
-  const labeledBy = slide.querySelector('h1, h2, h3, h4, h5, h6');
-  if (labeledBy) {
-    slide.setAttribute('aria-labelledby', labeledBy.getAttribute('id'));
-  }
 
   return slide;
 }
