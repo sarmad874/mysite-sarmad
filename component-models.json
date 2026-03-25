@@ -170,11 +170,9 @@
         "collapsible": true,
         "fields": [
           {
-            "component": "reference",
+            "component": "image",
             "name": "slide1Image",
-            "label": "Image",
-            "valueType": "string",
-            "multi": false
+            "label": "Image"
           }
         ]
       },
@@ -185,11 +183,9 @@
         "collapsible": true,
         "fields": [
           {
-            "component": "reference",
+            "component": "image",
             "name": "slide2Image",
-            "label": "Image",
-            "valueType": "string",
-            "multi": false
+            "label": "Image"
           }
         ]
       },
@@ -200,11 +196,9 @@
         "collapsible": true,
         "fields": [
           {
-            "component": "reference",
+            "component": "image",
             "name": "slide3Image",
-            "label": "Image",
-            "valueType": "string",
-            "multi": false
+            "label": "Image"
           }
         ]
       }
