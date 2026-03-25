@@ -165,9 +165,6 @@
     "fields": [
       {
         "component": "container",
-        "name": "slides",
-        "label": "Slides",
-        "multi": true,
         "fields": [
           {
             "component": "reference",
